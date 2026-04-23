@@ -1,0 +1,550 @@
+{
+    "version": 1,
+    "generated_at": "2026-04-23T05:05:00Z",
+    "tool_versions": {
+        "devguard": "0.7.0"
+    },
+    "issues": [
+        {
+            "rule": "debug_mode",
+            "message": "APP_DEBUG is enabled (APP_ENV=local)",
+            "signature": "a0d3fd79d209e2eb557d7fee0919ebbafa5ee1c7"
+        },
+        {
+            "rule": "https_enforced",
+            "message": "HTTPS not enforced (APP_ENV=local)",
+            "signature": "7cdf2e22795f83db4a7eec23a04e0992e44ef310"
+        },
+        {
+            "rule": "rate_limit",
+            "message": "No rate limiting detected on routes",
+            "signature": "5bad144669e18e75d81c6c885c84fd650897197a"
+        },
+        {
+            "rule": "repository_layer",
+            "message": "No Repository layer detected (app/Repositories missing)",
+            "signature": "89d54529fe25563bc81fa54bd654c731bdccdc7a"
+        },
+        {
+            "rule": "service_layer",
+            "message": "No Service layer detected (app/Services missing)",
+            "signature": "90c5b2b1b0d6d0dc477fc5b2baea823b4e2889d8"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('APP_MAINTENANCE_STORE') references undeclared key — will return null at runtime",
+            "signature": "0acc4db72d3fa73f4f712d0b9ce216e6ae505343",
+            "file": "config/app.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('APP_PREVIOUS_KEYS') references undeclared key — will return null at runtime",
+            "signature": "4bbdf428f3613639e806aaed6e5e01a078dc6f38",
+            "file": "config/app.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('AUTH_PASSWORD_BROKER') references undeclared key — will return null at runtime",
+            "signature": "0205c8b1f1929bc5902115b5436702d4dfa26dfb",
+            "file": "config/auth.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('AUTH_PASSWORD_RESET_TOKEN_TABLE') references undeclared key — will return null at runtime",
+            "signature": "75101e5d63c3393c1e976e9cee8e0837338ca0a7",
+            "file": "config/auth.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('AUTH_PASSWORD_TIMEOUT') references undeclared key — will return null at runtime",
+            "signature": "9cc6f9c8c4359f90c5117e61594c5d06844cc8c2",
+            "file": "config/auth.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('AUTH_GUARD') references undeclared key — will return null at runtime",
+            "signature": "bb8068c8b8333189d3fcac80e384dff330c5ceb6",
+            "file": "config/auth.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('AUTH_MODEL') references undeclared key — will return null at runtime",
+            "signature": "bf992b8e846a1e27f9bce78cab2563e26d52bcb5",
+            "file": "config/auth.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MEMCACHED_PORT') references undeclared key — will return null at runtime",
+            "signature": "0f34a701510b23f3b79eb53f331a279e7bbac7d8",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MEMCACHED_PASSWORD') references undeclared key — will return null at runtime",
+            "signature": "1563df90e6dd95177985fe1910f2d53edaba8591",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MEMCACHED_PERSISTENT_ID') references undeclared key — will return null at runtime",
+            "signature": "216485ee4682886e3832f6d0f776303dae275c5e",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('CACHE_PREFIX') references undeclared key — will return null at runtime",
+            "signature": "2996ea0695af10e344a8c7db75f351a71ec18a59",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_CACHE_LOCK_CONNECTION') references undeclared key — will return null at runtime",
+            "signature": "2b640ca3113ae3a6a642b13c3b7c11fb8b0409a3",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_CACHE_LOCK_CONNECTION') references undeclared key — will return null at runtime",
+            "signature": "465a7f9a80a782217da608c223950386138d6a24",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MEMCACHED_USERNAME') references undeclared key — will return null at runtime",
+            "signature": "4ffbab5e4cbc42e8607598bd81e48f55c2d17425",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_CACHE_CONNECTION') references undeclared key — will return null at runtime",
+            "signature": "83299b2febe896ab2fce96f9321a755135def4da",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_CACHE_LOCK_TABLE') references undeclared key — will return null at runtime",
+            "signature": "8c6174a5871647087f665f71d1f5dea9d8e4bbb5",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_CACHE_TABLE') references undeclared key — will return null at runtime",
+            "signature": "8ea9025e9a2b7751c28d4946ddbc91af92e9f681",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DYNAMODB_CACHE_TABLE') references undeclared key — will return null at runtime",
+            "signature": "a3fbf992cd2b7fa73ea555af0f008bd566f7f13a",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_CACHE_CONNECTION') references undeclared key — will return null at runtime",
+            "signature": "e5f0e234129f021c6580044e3c4b8ad30f4dadc7",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DYNAMODB_ENDPOINT') references undeclared key — will return null at runtime",
+            "signature": "fd73046ca8922a142cdf3220c2d895d4cfb517dd",
+            "file": "config/cache.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_SSLMODE') references undeclared key — will return null at runtime",
+            "signature": "0456bd3fd0f901bcc69188df9f4be7b0c1018354",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_CLUSTER') references undeclared key — will return null at runtime",
+            "signature": "0ca79b351c893b4dd20ac45584ba7f19add62099",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_PASSWORD') references undeclared key — will return null at runtime",
+            "signature": "1403f86e08c3eb4cbd88c9ac7e54367a1e71d079",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_URL') references undeclared key — will return null at runtime",
+            "signature": "37060a22ef5367c9c5c07421289de3fe94fb9c1c",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_BACKOFF_CAP') references undeclared key — will return null at runtime",
+            "signature": "3fb2ebd2a19c0bf41de4ae3ca36590301b3ae1fb",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_FOREIGN_KEYS') references undeclared key — will return null at runtime",
+            "signature": "41fe40298a22060ba8091a823179199dcf240141",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_BACKOFF_ALGORITHM') references undeclared key — will return null at runtime",
+            "signature": "43f097e3940d1852323e9af28db8795739ee9177",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_USERNAME') references undeclared key — will return null at runtime",
+            "signature": "4c512bd240e4c7800f0d5a4727773555dc609e94",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_CACHE_DB') references undeclared key — will return null at runtime",
+            "signature": "5291f5c421722d79a35a4c97243a65f309245cab",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_USERNAME') references undeclared key — will return null at runtime",
+            "signature": "6e0264f22acbf06f666b425d5b7da0f0e275359b",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_HOST') references undeclared key — will return null at runtime",
+            "signature": "7b782346a70f16c55f6973687259a74222467cef",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_URL') references undeclared key — will return null at runtime",
+            "signature": "7cd5b7977b826f8d9bb31e5ab109cb3a53496557",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_BACKOFF_BASE') references undeclared key — will return null at runtime",
+            "signature": "81ee5252152b2c334205496046f6663ee485e6b9",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_PREFIX') references undeclared key — will return null at runtime",
+            "signature": "968d286a3abd5afcbf22a34bbdffba1976c284b1",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_PORT') references undeclared key — will return null at runtime",
+            "signature": "9941ca5a572a9c1008b75dac5e13981d9e92a9eb",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MYSQL_ATTR_SSL_CA') references undeclared key — will return null at runtime",
+            "signature": "99e27de5c541bc2748c884b5e44798817d88b861",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_MAX_RETRIES') references undeclared key — will return null at runtime",
+            "signature": "a8ebfae4d61ac77885bb22526f64766d2f2caec2",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_COLLATION') references undeclared key — will return null at runtime",
+            "signature": "aef0dc657b3ac1dc72aa13edbff1a13a6fd1c9b3",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_DATABASE') references undeclared key — will return null at runtime",
+            "signature": "b0b24c88ff0a1d2663a46feb4a422e7873ca7a13",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_DB') references undeclared key — will return null at runtime",
+            "signature": "b179103869f97aa1f2e8b9966a48739c28274966",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_SOCKET') references undeclared key — will return null at runtime",
+            "signature": "c186526288ad4b6a62d205fe0ecb708c294ad239",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_CHARSET') references undeclared key — will return null at runtime",
+            "signature": "ce4fd8fe71136b15b8bab1e69090ef03dc4c48bb",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_PERSISTENT') references undeclared key — will return null at runtime",
+            "signature": "ea0381c02f9b88bdcef1a573c20ee6d3a0b43056",
+            "file": "config/database.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('AWS_URL') references undeclared key — will return null at runtime",
+            "signature": "a7fc85bf08946923075c37a397624cde483112d7",
+            "file": "config/filesystems.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('AWS_ENDPOINT') references undeclared key — will return null at runtime",
+            "signature": "fa382cacab5d8960772de63e5967231ea789eff4",
+            "file": "config/filesystems.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('PAPERTRAIL_URL') references undeclared key — will return null at runtime",
+            "signature": "05964d5cd00308976cb326432f3ef3d58c9e8895",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('LOG_DAILY_DAYS') references undeclared key — will return null at runtime",
+            "signature": "3fd52e5c687709d8b449efc5de2ade80c75c66de",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('LOG_SYSLOG_FACILITY') references undeclared key — will return null at runtime",
+            "signature": "4eb32ab28ae3cda04a89abb82537670973b9c458",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('LOG_PAPERTRAIL_HANDLER') references undeclared key — will return null at runtime",
+            "signature": "4f2bd102996330e380b699417a12d108501ffa01",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('PAPERTRAIL_PORT') references undeclared key — will return null at runtime",
+            "signature": "5a076cf25a38d84d47537e082c20d33dd62e44e2",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('LOG_SLACK_EMOJI') references undeclared key — will return null at runtime",
+            "signature": "857a2642f3e6a1e0bbfcc97ba3d4b8a79b65939a",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('LOG_SLACK_USERNAME') references undeclared key — will return null at runtime",
+            "signature": "919cd7e996bd3f059ea6bd55f08ee9afcd5225b8",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('LOG_STDERR_FORMATTER') references undeclared key — will return null at runtime",
+            "signature": "9628d9c3a980ddaa8d8066a6aaab838e3c87dc61",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('LOG_DEPRECATIONS_TRACE') references undeclared key — will return null at runtime",
+            "signature": "e49d130958255b63ae85ea41da0246c4e501cc15",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('LOG_SLACK_WEBHOOK_URL') references undeclared key — will return null at runtime",
+            "signature": "f50c4a29d2a8b0ca25659232ee1ceb6fd5f26acf",
+            "file": "config/logging.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MAIL_URL') references undeclared key — will return null at runtime",
+            "signature": "3c682b46b1638b3f6f2b4dbc167f73c5a90ab7ce",
+            "file": "config/mail.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MAIL_SENDMAIL_PATH') references undeclared key — will return null at runtime",
+            "signature": "9ed597bc27303a8bf819e31e08fd17ab78d73fb4",
+            "file": "config/mail.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MAIL_LOG_CHANNEL') references undeclared key — will return null at runtime",
+            "signature": "b446c88418e610de2c10a90d5e08eb7e82d468b9",
+            "file": "config/mail.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('MAIL_EHLO_DOMAIN') references undeclared key — will return null at runtime",
+            "signature": "e27d52e6b3eda432167d05a36b79fa526d77017f",
+            "file": "config/mail.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('BEANSTALKD_QUEUE_HOST') references undeclared key — will return null at runtime",
+            "signature": "2857890ae545f2bf229808188e8bad8b4a8028a5",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_QUEUE_CONNECTION') references undeclared key — will return null at runtime",
+            "signature": "3574704f94510ac139e0e6c6f484c4df0585ed27",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_QUEUE') references undeclared key — will return null at runtime",
+            "signature": "411e9564862940a9854f68b75b3d1f6c9c94182e",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_QUEUE_CONNECTION') references undeclared key — will return null at runtime",
+            "signature": "4f480c424d5c816efaadbd0ead454851be753eb0",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('BEANSTALKD_QUEUE') references undeclared key — will return null at runtime",
+            "signature": "57d198f3e2d96f1bdf00dd695131842d6a99b18b",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SQS_QUEUE') references undeclared key — will return null at runtime",
+            "signature": "68ad5545b105ab08f0f508b576d56cb29936be36",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_QUEUE') references undeclared key — will return null at runtime",
+            "signature": "7aa2f780876f109481c8d8e0ee8c2b9150a2d305",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('REDIS_QUEUE_RETRY_AFTER') references undeclared key — will return null at runtime",
+            "signature": "9c03d4ff7d53166caebe317ea9b4fc5630bceefc",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('QUEUE_FAILED_DRIVER') references undeclared key — will return null at runtime",
+            "signature": "a5519f23f4c16752d7943af0e0c34a69babc9147",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_QUEUE_RETRY_AFTER') references undeclared key — will return null at runtime",
+            "signature": "c53a8a778c5bf4ef16c03928484f8b063707d8f0",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SQS_PREFIX') references undeclared key — will return null at runtime",
+            "signature": "d51d10a04ee6fdabf47ed8a4d0afb7cd5a97bd57",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('DB_QUEUE_TABLE') references undeclared key — will return null at runtime",
+            "signature": "efb0b4e4de0fb7c7bcb864b931685b34444c696a",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('BEANSTALKD_QUEUE_RETRY_AFTER') references undeclared key — will return null at runtime",
+            "signature": "f5b48082d531c05c68f84044be40d7657924208a",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SQS_SUFFIX') references undeclared key — will return null at runtime",
+            "signature": "fb7dc56833500b59b38a4b2074480945a43a6568",
+            "file": "config/queue.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('RESEND_API_KEY') references undeclared key — will return null at runtime",
+            "signature": "34a955b2d440ff0796f2b860413c6fb97b0409e9",
+            "file": "config/services.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SLACK_BOT_USER_OAUTH_TOKEN') references undeclared key — will return null at runtime",
+            "signature": "3785e2cfafc5a2da50303480920bb319e75c5152",
+            "file": "config/services.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SLACK_BOT_USER_DEFAULT_CHANNEL') references undeclared key — will return null at runtime",
+            "signature": "8eb549126cc4fbb050c5180b04e9bd8935d7542f",
+            "file": "config/services.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('POSTMARK_API_KEY') references undeclared key — will return null at runtime",
+            "signature": "91a39e9d503335c192f054f2c461341ab668b848",
+            "file": "config/services.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_PARTITIONED_COOKIE') references undeclared key — will return null at runtime",
+            "signature": "05aaea8f067786492c1c3e4721ecc536e5b0b336",
+            "file": "config/session.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_COOKIE') references undeclared key — will return null at runtime",
+            "signature": "201d89e82c33c361006abced40300554fcfe70f7",
+            "file": "config/session.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_HTTP_ONLY') references undeclared key — will return null at runtime",
+            "signature": "372bd620411a768acd113ddfdf6e9a104d8d5f73",
+            "file": "config/session.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_TABLE') references undeclared key — will return null at runtime",
+            "signature": "436390f5c1e74f7a310475374c87bcff1b9e9e03",
+            "file": "config/session.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_STORE') references undeclared key — will return null at runtime",
+            "signature": "5570eab3ce05e9588c42673e9a938d34f98bf7e9",
+            "file": "config/session.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_SAME_SITE') references undeclared key — will return null at runtime",
+            "signature": "75fb4c393a5a05f4c2b588292454d4b1105ae6f3",
+            "file": "config/session.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_EXPIRE_ON_CLOSE') references undeclared key — will return null at runtime",
+            "signature": "77231d7ebc8d30c5869ee14e296a7d119cc76aa2",
+            "file": "config/session.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_CONNECTION') references undeclared key — will return null at runtime",
+            "signature": "989c822b9f68ff9ca4da39a95946d56cd08e075c",
+            "file": "config/session.php"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('SESSION_SECURE_COOKIE') references undeclared key — will return null at runtime",
+            "signature": "a584fb48f69c47176c952ac4e622034692b4de26",
+            "file": "config/session.php"
+        }
+    ]
+}
