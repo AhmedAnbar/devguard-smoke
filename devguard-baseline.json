@@ -1,20 +1,10 @@
 {
     "version": 1,
-    "generated_at": "2026-04-23T05:05:00Z",
+    "generated_at": "2026-04-25T08:37:19Z",
     "tool_versions": {
-        "devguard": "0.7.0"
+        "devguard": "dev-main"
     },
     "issues": [
-        {
-            "rule": "debug_mode",
-            "message": "APP_DEBUG is enabled (APP_ENV=local)",
-            "signature": "a0d3fd79d209e2eb557d7fee0919ebbafa5ee1c7"
-        },
-        {
-            "rule": "https_enforced",
-            "message": "HTTPS not enforced (APP_ENV=local)",
-            "signature": "7cdf2e22795f83db4a7eec23a04e0992e44ef310"
-        },
         {
             "rule": "rate_limit",
             "message": "No rate limiting detected on routes",
@@ -29,6 +19,12 @@
             "rule": "service_layer",
             "message": "No Service layer detected (app/Services missing)",
             "signature": "90c5b2b1b0d6d0dc477fc5b2baea823b4e2889d8"
+        },
+        {
+            "rule": "undeclared_env_calls",
+            "message": "env('TOTALLY_FAKE_KEY') references undeclared key — will return null at runtime",
+            "signature": "16742baceacb7794b349774d888ad4930ff830d4",
+            "file": "app/Http/Controllers/Controller.php"
         },
         {
             "rule": "undeclared_env_calls",
