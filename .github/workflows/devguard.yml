@@ -1,0 +1,40 @@
+name: DevGuard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+  security-events: write   # required to upload SARIF
+
+jobs:
+  devguard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Laravel's .env is gitignored by convention (it holds secrets), so
+      # actions/checkout never pulls one. Materialize it from .env.example
+      # before running the audit, and seed APP_KEY so the env-audit rule
+      # sees a properly-configured project. Mirrors what every Laravel CI
+      # does at the start of its run.
+      #
+      # Safe: no ${{ github.event.* }} or other untrusted input is interpolated.
+      - name: Prepare .env for audit
+        run: |
+          cp .env.example .env
+          sed -i "s|^APP_KEY=.*|APP_KEY=base64:$(openssl rand -base64 32)|" .env
+
+      - name: Run DevGuard
+        uses: AhmedAnbar/devguard-action@v1
+        with:
+          sarif-output: devguard.sarif
+
+      - name: Upload SARIF to GitHub Code Scanning
+        if: always()
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: devguard.sarif
+          category: devguard

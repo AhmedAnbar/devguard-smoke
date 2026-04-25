@@ -24,3 +24,7 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# devguard local artifacts (backup files from `devguard fix`, HTML reports)
+*.devguard.bak
+devguard-report.html
